@@ -1,0 +1,51 @@
+Installing Packages from source in ArchLinux
+
+To install a third-party software package in
+Arch Linux access the AUR package repository
+page and search for the package you need to install. 
+In our case, We are going to install Google
+Chrome in our Arch Linux system.
+
+Click on “Download Snapshot” in the right pane under
+“Package Actions“. This will download the tarball of Google Chrome 
+in your local ‘Downloads’ folder.
+
+Navigate to the ‘Downloads’ folder and extract the tarball
+
+=>       tar -xvf google-chrome.tar.gz
+
+
+Navigate the newly created google-chrome folder with the cd command
+
+=>       cd google-chrome
+
+To view the directory’s contents, use the ls command.
+ Be sure to catch a glance of several files
+
+=>       ls
+
+Next, run the makepkg command
+
+=>       makepkg
+
+The makepkg tool automates the process of converting the source code 
+into binaries by acting as a compiler. In this case,
+the makepkg command instructs the System to generate a 
+native Arch Linux package for Google Chrome.
+
+Inside the snapshot folder, you’ll discover a newly generated
+native arch package for Google Chrome.
+
+google-chrome-68.0.3440.106-1-x86_64.pkg.tar.xz
+
+Switch to root user and run the command below to install Google Chrome
+
+=>        pacman -U google-chrome*.tar.gz
+
+
+
+
+
+
+
+

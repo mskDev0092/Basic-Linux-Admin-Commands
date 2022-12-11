@@ -1,0 +1,21 @@
+fdisk -l // lists availible drives
+
+umount /dev/sdc       // unmounts drive
+
+mkfs.vfat /dev/sdc -I // formats drive
+
+# Arch Linux
+dd if=/home/msk/Downloads/archlinux-2022.10.01-x86_64.iso of=/dev/sdc status=progress && sync // it will burn iso to usb
+
+# PureOS Linux
+dd if=/home/msk/Downloads/pureos-10~devel-gnome-live-20220602_amd64.iso of=/dev/sdc status=progress && sync // it will burn iso to usb
+
+# PopOS Linux
+dd if=/home/msk/Downloads/pop-os_22.04_amd64_nvidia_14.iso of=/dev/sdc status=progress && sync // it will burn iso to usb
+
+
+# Gentoo Linux
+dd if=/home/msk/Downloads/livegui-amd64-20221106T170545Z (1).iso of=/dev/sdc status=progress && sync // it will burn iso to usb
+
+
+
