@@ -41,6 +41,8 @@ grep -r . /sys/devices/system/cpu/vulnerabilities/
 sudo nano /etc/pacman.d/mirrorlist  
 ```
 
+
+
 > Install Specific Kernal in Arch Linux using the command below:
 ```properties
 pacman -Sy linux linux-headers
@@ -58,12 +60,13 @@ pacman -Sy linux-zen linux-zen-headers
 ```properties
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-Then Reboot your system.
+>Then Reboot your system:
 
 
 
 
-Remove Specific Kernal in Arch Linux using the command below:
+>Remove Specific Kernal in Arch Linux using the command below:
+
 ```properties
 pacman -Rsu linux linux-headers
 ```
@@ -77,67 +80,104 @@ pacman -Rsu linux-hardened linux-headers-hardened
 pacman -Rsu linux-zen linux-zen-headers
 
 
-After removing Linux kernal on Arch , regenerate the grub.cfg with the command below:
+>After removing Linux kernal on Arch , regenerate the grub.cfg with the command below:
+
 ```properties
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
-Then Reboot your system.
+>Then Reboot your system:
 
 
-=> Installing Packages from source in ArchLinux
+>Installing Packages from source in ArchLinux:
 
-=> To install a third-party software package in
+> To install a third-party software package in
 Arch Linux access the AUR package repository
 page and search for the package you need to install. 
 In our case, We are going to install Google
-Chrome in our Arch Linux system.
+Chrome in our Arch Linux system:
 
-=> Click on “Download Snapshot” in the right pane under
+> Click on “Download Snapshot” in the right pane under
 “Package Actions“. This will download the tarball of Google Chrome 
-in your local ‘Downloads’ folder.
+in your local ‘Downloads’ folder:
 
-Navigate to the ‘Downloads’ folder and extract the tarball
+> Navigate to the ‘Downloads’ folder and extract the tarball:
 ```properties
       tar -xvf google-chrome.tar.gz
 ```
 
-Navigate the newly created google-chrome folder with the cd command
+> Navigate the newly created google-chrome folder with the cd command:
 ```properties
        cd google-chrome
 ```
-To view the directory’s contents, use the ls command.
- Be sure to catch a glance of several files
+> To view the directory’s contents, use the ls command
+ Be sure to catch a glance of several files:
 ```properties
        ls
 ```
-Next, run the makepkg command
+> Next, run the makepkg command:
 ```properties
        makepkg
 ```
-=> The makepkg tool automates the process of converting the source code 
+> The makepkg tool automates the process of converting the source code 
 into binaries by acting as a compiler. In this case,
 the makepkg command instructs the System to generate a 
-native Arch Linux package for Google Chrome.
+native Arch Linux package for Google Chrome:
 
-=> Inside the snapshot folder, you’ll discover a newly generated
-native arch package for Google Chrome.
+> Inside the snapshot folder, you’ll discover a newly generated
+native arch package for Google Chrome:
 
 google-chrome-68.0.3440.106-1-x86_64.pkg.tar.xz
 
-=> Switch to root user and run the command below to install Google Chrome
+> Switch to root user and run the command below to install Google Chrome:
 
 ```properties
         pacman -U google-chrome*.tar.gz
 ```
 
+> Installing Yay AUR Helper in Arch Linux and Manjaro:
+> To start off, log in as a sudo user and run the command below to download the git package:
 
+```properties
+   sudo pacman -S git    
+```
+> Next, clone the yay git repository:
 
+```properties
+   cd /opt
+```
+```properties
+   sudo git clone https://aur.archlinux.org/yay-git.git 
+```
+> Change the file permissions from the root the sudo user:
+```properties
+   sudo chown -R useryou:useryou ./yay-git    
+```
+> To build the package from PKGBUILD, navigate into the yay folder:
+```properties
+   cd yay-git
+```
+> Next, build the package using the makepkg command below:
+```properties
+   makepkg -si    
+```
+> How to Use Yay in Arch Linux and Manjaro:
+> Once you have yay installed, you can upgrade all the packages on your system using the command:
+```properties
+   sudo yay -Syu    
+```
+> As with any other AUR helpers, you can install the packages using the command:
+```shell
+   sudo yay -S gparted   
+```
+> To remove a package using yay use the command:
+```shell
+   sudo yay -Rns package_name   
+```
 
-
-
-
-
-
+To clean up all unwanted dependencies on your system, issue the command.
+```shell
+sudo yay -Yc
+```
 
 
 
