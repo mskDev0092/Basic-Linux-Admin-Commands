@@ -44,7 +44,8 @@ sudo nano /etc/pacman.d/mirrorlist
 
 
 
-> Install Specific Kernal in Arch Linux using the command below:
+# Install Specific Kernal in Arch Linux using the command below
+
 ```properties
 pacman -Sy linux linux-headers
 ```
@@ -66,7 +67,7 @@ grub-mkconfig -o /boot/grub/grub.cfg
 
 
 
->Remove Specific Kernal in Arch Linux using the command below:
+# Remove Specific Kernal in Arch Linux using the command below
 
 ```properties
    pacman -Rsu linux linux-headers
@@ -89,7 +90,7 @@ pacman -Rsu linux-hardened linux-headers-hardened
 >Then Reboot your system:
 
 
->Installing Packages from source in ArchLinux:
+# Installing Packages from source in ArchLinux
 
 > To install a third-party software package in
 Arch Linux access the AUR package repository
@@ -135,7 +136,8 @@ google-chrome-68.0.3440.106-1-x86_64.pkg.tar.xz
 pacman -U google-chrome*.tar.gz
 ```
 
-> Installing Yay AUR Helper in Arch Linux and Manjaro:
+# Installing Yay AUR Helper in Arch Linux and Manjaro
+
 > To start off, log in as a sudo user and run the command below to download the git package:
 
 ```properties
