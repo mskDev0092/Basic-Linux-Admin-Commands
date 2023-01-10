@@ -1,17 +1,20 @@
-Install Specific Kernal in Arch Linux using the command below:
-
+> Install Specific Kernal in Arch Linux using the command below:
+```
 pacman -Sy linux linux-headers
-
+```
+```
 pacman -Sy linux-lts linux-lts-headers
-
+```
+```
 pacman -Sy linux-hardened linux-headers-hardened
-
+```
+```
 pacman -Sy linux-zen linux-zen-headers
-
-After installing Linux kernal on Arch , regenerate the grub.cfg with the command below:
-
+```
+> After installing Linux kernal on Arch , regenerate the grub.cfg with the command below:
+```
 grub-mkconfig -o /boot/grub/grub.cfg
-
+```
 Then Reboot your system.
 
 
