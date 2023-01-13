@@ -1,5 +1,5 @@
 
-# Basic-Linux-Administration- [Arch Linux]
+# Basic Linux Commands- [Arch Linux]
 
 > update sys repo and sync:
 ```properties
