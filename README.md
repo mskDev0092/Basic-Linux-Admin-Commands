@@ -1,4 +1,10 @@
-
+| Table of Contents                                                                                                                                    |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1. [Basic Linux Commands - Arch Linux](https://github.com/mskDev0092/Basic-Linux-Admin-Commands#basic-linux-commands--arch-linux)                    |
+| 2. [Install Specific Kernal](https://github.com/mskDev0092/Basic-Linux-Admin-Commands#install-specific-kernal-in-arch-linux-using-the-command-below) |
+| 3. [Remove Specific Kernal](https://github.com/mskDev0092/Basic-Linux-Admin-Commands#remove-specific-kernal-in-arch-linux-using-the-command-below)   |
+| 4. [Installing Packages from source](https://github.com/mskDev0092/Basic-Linux-Admin-Commands#installing-packages-from-source-in-archlinux)          |
+| 5. [Installing Yay AUR Helper](https://github.com/mskDev0092/Basic-Linux-Admin-Commands#installing-yay-aur-helper-in-arch-linux-and-manjaro)                                  |
 # Basic Linux Commands- [Arch Linux]
 
 > update sys repo and sync:
